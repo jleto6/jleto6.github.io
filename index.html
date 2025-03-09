@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Letobar</title>
     <link rel="stylesheet" href="styles.css">
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 </head>
 
 <style>
     h1 {
         font-family: "Courier New", monospace;
         white-space: pre;
-        font-size: 12px; /* Adjust size as needed */
+        font-size: 16; /* Adjust size as needed */
         text-align: center;
+        color: white;
+        
+        /* Glow Effect */
+        text-shadow: 
+            -2px 0px 2px rgba(255, 0, 0, 0.8),   /* Red channel offset left */
+            2px 0px 2px rgba(0, 255, 255, 0.8), /* Cyan channel offset right */
+            0px 0px 8px #00ffcc; /* General glow */
+
+        /* CRT Blur & Contrast */
+        filter: blur(0.7px) contrast(1.2) brightness(1.1);
+    }
+
+    body {
+
+        font-family: 'VT323', monospace;
+        background-color: black;
         color: white;
         
         /* Glow Effect */
