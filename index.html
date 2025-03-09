@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Letobar</title>
     <link rel="stylesheet" href="styles.css">
-    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
 </head>
 
+
+
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
     h1 {
         font-family: "Courier New", monospace;
         white-space: pre;
-        font-size: 16; /* Adjust size as needed */
+        font-size: 12; /* Adjust size as needed */
         text-align: center;
         color: white;
         
@@ -50,14 +52,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: black;
         background: repeating-linear-gradient(
-            rgba(0, 0, 0, 0.1) 0px, 
-            rgba(0, 0, 0, 0.1) 1px, 
+            rgba(0, 255, 204, 0.05) 0px, 
+            rgba(0, 255, 204, 0.05) 1px, 
             transparent 2px, 
-            transparent 4px
+            transparent 5px
         );
-        opacity: 0.2; /* Adjust visibility */
+        opacity: 0.4; /* Increase visibility */
+        mix-blend-mode: overlay; /* Ensures better blending */
         pointer-events: none;
         z-index: 9999;
 
