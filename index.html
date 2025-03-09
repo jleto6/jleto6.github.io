@@ -9,7 +9,7 @@
 
 <style>
     html, body {
-        font-family: "Courier New", monospace;
+        font-family: 'VT323', monospace;
         white-space: pre;
         font-size: 12px; /* Adjust size as needed */
         text-align: center;
@@ -24,10 +24,11 @@
 
         /* CRT Blur & Contrast */
         filter: blur(0.7px) contrast(1.2) brightness(1.1);
+
     }
 
     body::before {
-        mix-blend-mode: multiply;
+        mix-blend-mode: overlay;
         content: "";
         position: fixed;
         top: 0;
@@ -41,15 +42,11 @@
                     transparent 2px, 
                     transparent 4px
                 );
-        opacity: 0.2; /* Adjust visibility */
+        opacity: 0.4; /* Adjust visibility */
         pointer-events: none;
         z-index: 9999;
 
-        font-family: 'VT323', monospace;
-        font-size: 18px;
-        color: white;
-        text-shadow: 0 0 5px #00ffcc;
-    }
+        }
 
 </style>
 
